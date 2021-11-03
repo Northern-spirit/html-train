@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+   <script src="jquery.dragtable.js"></script>
+   <script type="text/javascript" src="http://akottr.github.io/js/jquery.chili-2.2.js"></script>
+   <link rel="stylesheet" type="text/css" href="dragtable.css" />
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $('#demo').dragtable();
+      });
+   </script>
+</head>
+
+<body>
+   <button id="myBtn" class="myBtn">Открыть окно</button>
+   <div id="myModal" class="modal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Header</h2>
+         </div>
+         <div class="modal-body">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure maxime voluptatibus, suscipit ipsa cum
+               quibusdam laborum expedita esse aliquid adipisci necessitatibus dicta et commodi facere natus quisquam
+               mollitia omnis nisi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi et harum nihil vitae asperiores aliquam
+               deleniti molestias, saepe mollitia officiis quo cumque eos deserunt, quibusdam, inventore sapiente!
+               Nulla, ab laborum?</p>
+         </div>
+         <div class="modal-footer">
+            <h3>Footer</h3>
+         </div>
+      </div>
+   </div>
+
+   <table id="demo">
+
+      <thead>
+         <tr>
+            <th>TIME</th>
+            <th>%user</th>
+            <th>%nice</th>
+            <th>%system</th>
+            <th>%iowait</th>
+            <th>%idle</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>12:10:01 AM</td>
+            <td>28.86</td>
+            <td>0.04</td>
+            <td>1.65</td>
+            <td>0.08</td>
+            <td>69.36</td>
+         </tr>
+         <tr>
+            <td>12:20:01 AM</td>
+            <td>26.54</td>
+            <td>0.00</td>
+            <td>1.64</td>
+            <td>0.08</td>
+            <td>71.74</td>
+         </tr>
+         <tr>
+            <td>12:30:01 AM</td>
+            <td>29.73</td>
+            <td>0.00</td>
+            <td>1.66</td>
+            <td>0.09</td>
+            <td>68.52</td>
+         </tr>
+      </tbody>
+
+   </table>
+
+   <div>
+      <div class="headerTitleWrap">
+         <div class="titleButton">
+            <div class="paddingTitle textCenter">Цена за месяц при покупке на</div>
+            <div class=" textCenter"><select class="borderBotton" value=" 0" name=”year” size=”4”>
+                  <option value=""> на 1 месяц </option>
+                  <option value=""> на 3 месяца </option>
+                  <option value="" selected> на год <div class="percent">-20%</div>
+                  </option>
+                  <option value=""> на 2 года <text class="percent">-30%</text>
+                  </option>
+               </select>
+            </div>
+         </div>
+         <div class="titleButton">
+            <div class="paddingTitle textCenter">Продлить тарифы купленные до 1 августа 2021</div>
+            <div class="borderBotton textCenter">Архив тарифов</div>
+         </div>
+      </div>
+   </div>
+   <div class="wrapperFlexRow">
+      <div class="borderWrapper">
+         <div class="headerFlexWrap">
+            <div class="headerBigTitle textCenter">Бесплатный</div>
+            <div class="headerSmallText textCenter">Начните работать онлайн и продавать больше с CRM</div>
+         </div>
+         <div>
+            <div class="bodyLargeTitle textCenter"><img src="img/fire.png" class="imgPng">неограниченно<br>
+               пользователей</div>
+            <div class="bodySmallText textCenter">Узнать больше</div>
+            <div class="bodyPrice textCenter">Бесплатно</div>
+         </div>
+         <div>
+            <div class="footerBotton textCenter">Создать</div>
+            <div class="footerGB textCenter">5 Гб</div>
+         </div>
+      </div>
+      <div class="borderWrapper borderWrapperColor">
+         <div class="headerFlexWrap backgroundBlue">
+            <div class="headerBigTitle textCenter ">Базовый</div>
+            <div class="headerSmallText textCenter">Для эффективной работы небольших компаний и отделов продаж</div>
+         </div>
+         <div>
+            <div class="bodyLargeTitle textCenter">5 <br>
+               пользователей</div>
+            <div class="bodySmallText textCenter">2 490 ₽/мес.</div>
+            <div class="bodyPrice textCenter colorTextBlue">1 990 ₽/мес.<div class="backgroundPrice">
+                  <div class="percent">-20%</div>
+               </div>
+            </div>
+            <div class="bodyText">за всех пользователей</div>
+         </div>
+         <div>
+            <div class="footerBotton textCenter">Купить</div>
+            <div class="footerGB textCenter">24 Гб</div>
+         </div>
+      </div>
+      <div class="borderWrapper borderWrapperColor">
+         <div class="headerFlexWrap backgroundBlue">
+            <div class="headerBigTitle textCenter ">Стандартный</div>
+            <div class="headerSmallText textCenter">Для совместной работы всей компании или рабочих групп</div>
+         </div>
+         <div>
+            <div class="bodyLargeTitle textCenter">50 <br>
+               пользователей</div>
+            <div class="bodySmallText textCenter">5 990 ₽/мес.</div>
+            <div class="bodyPrice textCenter colorTextBlue">4 790 ₽/мес.<div class="backgroundPrice">
+                  <div class="percent">-20%</div>
+               </div>
+            </div>
+            <div class="bodyText">за всех пользователей</div>
+         </div>
+         <div>
+            <div class="footerBotton textCenter">Купить</div>
+            <div class="footerGB textCenter">100 Гб</div>
+         </div>
+      </div>
+      <div class="borderWrapper borderWrapperColor">
+         <div class="headerFlexWrap backgroundBlue">
+            <div class="headerBigTitle textCenter ">Профессиональный</div>
+            <div class="headerSmallText textCenter">Для максимальной автоматизации всех процессов компании</div>
+         </div>
+         <div>
+            <div class="bodyLargeTitle textCenter"><img src="img/fire.png" class="imgPng">неограниченно <br>
+               пользователей</div>
+            <div class="bodySmallText textCenter">11 990 ₽/мес.</div>
+            <div class="bodyPrice textCenter colorTextBlue">9 590 ₽/мес.<div class="backgroundPrice">
+                  <div class="percent">-20%</div>
+               </div>
+            </div>
+            <div class="bodyText">за всех пользователей</div>
+         </div>
+         <div>
+            <div class="footerBotton textCenter">Купить</div>
+            <div class="footerGB textCenter">1 024 Гб</div>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
